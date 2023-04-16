@@ -1,0 +1,575 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fcba03;
+}
+
+::selection {
+  background-color: #fcba03;
+  color: black;
+}
+
+body {
+  overflow-x: auto;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.color {
+  color: #fcba03;
+}
+
+.row {
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.section__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 48px;
+  margin-bottom: 32px;
+}
+
+.section__header--title {
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.1cm;
+}
+
+.section__header--sub-title {
+  font-size: 40px;
+  margin-top: 16px;
+  font-weight: 500;
+}
+
+/* 
+
+LANDING-PAGE 
+
+*/
+
+#landing-page {
+  background-image: url(./assets/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 56px;
+}
+
+.nav__logo--container {
+  border: 5px solid white;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 36px;
+}
+
+.nav__logo {
+  margin: 28px 20px 20px 20px;
+  font-size: 36px;
+}
+
+.nav__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 36px;
+}
+
+.nav__link {
+  margin: 0 12px;
+}
+
+.nav__link--anchor {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+}
+
+.nav__link--anchor::before {
+  content: attr(data-text);
+  position: absolute;
+  color: transparent;
+  width: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px #fcba03;
+}
+
+.nav__link--anchor:hover::before {
+  width: 100%;
+}
+
+.header__block {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  width: 100%;
+  margin: 48px 16px;
+  margin: 0 auto;
+}
+
+.header__block--title {
+  color: white;
+  font-size: 48px;
+  text-align: center;
+}
+
+.header__block--list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.block__list--link {
+  margin: 20px 12px;
+  font-size: 24px;
+}
+
+.block__line {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.scroll {
+  color: white;
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  margin-bottom: 40px;
+}
+
+.fa-angle-down {
+  transition: all 300ms ease;
+}
+
+.fa-angle-down:hover {
+  transform: scale(1.2);
+}
+
+/* 
+
+SERVICES 
+
+*/
+
+#services {
+  background-color: rgb(243, 243, 243);
+  overflow: hidden;
+}
+
+.service__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
+.service {
+  width: 100%;
+  max-width: calc(90% / 3);
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+
+.service__icon {
+  margin: 0 auto;
+  background-color: #fcba03;
+  color: white;
+  font-size: 28px;
+  border-radius: 10px;
+  height: 60px;
+  width: 60px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service__title {
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+
+.service__para {
+  line-height: 1.4;
+}
+
+/* 
+
+WORK
+
+*/
+
+#work .section__header--sub-title {
+  color: white;
+}
+
+.parallax-effect {
+  background-image: url(./assets/ehimetalor-akhere-unuabona-zw6SdOxJ2F8-unsplash.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.work__container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.work {
+  background-color: white;
+  position: relative;
+  margin: 40px;
+}
+
+.work__img-wrapper {
+  width: 100%;  
+  height: 200px;
+}
+
+.work__img {
+  height: 100%;
+  width: 100%;
+}
+
+.work__title {
+  margin-top: 28px;
+  margin-left: 8px;
+  text-align: left;
+}
+
+.work__para {
+  text-align: left;
+  margin-left: 8px;
+  margin-top: 16px;
+  line-height: 1.2;
+}
+
+.work__btn {
+  margin-top: 20px;
+  margin-left: 8px;
+  margin-bottom: 24px;
+  display: flex;
+  background-color: black;
+  border: none;
+  padding: 8px;
+  color: white;
+  transition: all 300ms ease;
+}
+
+.work__btn:hover {
+  background-color: rgba(0, 0, 0, 0.501);
+  cursor: pointer;
+}
+
+.yellow-line {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #fcba03;
+}
+
+/* 
+
+WORK
+
+*/
+
+#clients {
+  background-color: rgb(243, 243, 243);
+  overflow: hidden;
+}
+
+.work__sub-title {
+  font-size: 36px;
+}
+
+.client__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.client {
+  margin: 10px 24px;
+}
+
+.client__card {
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 48px;
+  background-color: white;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  position: relative;
+  width: 480px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.client__img--wrapper {
+  margin: 16px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.client__img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.client__para, .client__loca {
+  color: rgb(179, 179, 179);
+  font-style: italic;
+  font-size: 18px;
+}
+
+.client__company {
+  margin-bottom: 16px;
+}
+
+.client__yellow-line {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #fcba03;
+}
+
+/* 
+
+FOOTER
+
+*/
+
+#footer {
+  background-image: url(./assets/marjan-blan-marjanblan-9tqAeLDQT-o-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+}
+
+.footer__container--wrapper {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 36px;
+}
+
+.footer__logo--container {
+  border: 2px solid white;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.footer__logo {
+  padding: 16px;
+}
+
+.footer__connect {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 20px;
+}
+
+.footer__connect--para, .footer__connect--wrapper {
+  margin: 12px 0;
+}
+
+.footer__connect--link {
+  color: white;
+  margin-right: 16px;
+  font-size: 24px;
+}
+
+.footer__list--wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.footer__list--title {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.footer__link {
+  text-align: center;
+}
+
+.footer__link, .footer__contact--address {
+  margin: 16px 0;
+}
+
+.footer__link--anchor {
+  color: white;
+}
+
+.footer__copyright {
+  margin: 48px 0;
+  text-align: center;
+  letter-spacing: 0.1cm;
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 880px) {
+  .header__block {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .nav__links {
+    flex-wrap: wrap;
+  }
+
+  .nav__link {
+    margin-bottom: 20px;
+  }
+
+
+
+  h2.section__header--sub-title{
+    text-align: center;
+  }
+
+  .work__container{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .work {
+    max-width: 320px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .header__block {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .service__container{
+    flex-wrap: wrap;
+  }
+
+  .service {
+    width: 100%;
+    max-width: 150px;
+  }
+
+  .client__wrapper {
+    flex-wrap: wrap;
+  }
+
+  .client {
+    width: 100%;
+    max-width: calc(100% / 4);
+    margin: 10px;
+  }
+
+  .client__card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer__connect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 28px;
+  }
+
+  .footer__connect--link {
+    margin: 8px;
+  }
+
+  .footer__list--wrapper {
+    margin-bottom: 28px;
+    text-align: center;
+  }
+
+  .footer__link {
+    font-size: 20px;
+  }
+}
